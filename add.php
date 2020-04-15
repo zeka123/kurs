@@ -4,8 +4,7 @@
 <?php
 $pass=$_POST['password'];
 $login=$_POST['login'];
-echo("иди нахуй ббять ");
-$mysql=new mysqli('95.217.23.55','root','','turn');
+$mysql=new mysqli('95.217.23.55','root','root','turn');
 
 if ($mysql->connect_error) {
     die("Connection error: ".$mysql>connect_error);
