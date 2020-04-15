@@ -9,7 +9,7 @@ $mysql=new mysqli('95.217.23.55','root','','turn');
 
 if ($mysql->connect_error) {
     die("Connection error: ".$mysql>connect_error);
-    $conn->close();
+    $mysql->close();
     header('Location:'.'indexerr.php');
     exit();
 }
