@@ -29,7 +29,7 @@ die();
 
 
 $pass=password_hash($pass,PASSWORD_BCRYPT );
-
+require_once 'connection.php';
 // $mysql=new mysqli('localhost','root','123','turn');
 $mysql = mysqli_connect('localhost', 'root', '123', 'turn') ;
 $result=$mysql->query ("SELECT*  FROM `start` WHERE  `login` = '$login'");
