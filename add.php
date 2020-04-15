@@ -4,6 +4,7 @@
 <?php
 $pass=$_POST['password'];
 $login=$_POST['login'];
+echo("иди нахуй ббять ");
 $mysql=new mysqli('95.217.23.55','root','root','turn');
 $result=$mysql->query ("SELECT*  FROM `start` WHERE  `login` = '$login'");
 $user=$result-> fetch_assoc();
