@@ -5,7 +5,15 @@
 $pass=$_POST['password'];
 $login=$_POST['login'];
 echo("иди нахуй ббять ");
-$mysql=new mysqli('95.217.23.55','root','root','turn');
+$mysql=new mysqli('95.217.23.55','root','','turn');
+
+if ($mysql->connect_error) {
+    die("Connection error: ".$mysql>connect_error);
+    $conn->close();
+    header('Location:'.'indexerr.php');
+    exit();
+}
+
 $result=$mysql->query ("SELECT*  FROM `start` WHERE  `login` = '$login'");
 $user=$result-> fetch_assoc();
 if ($user == null) {
