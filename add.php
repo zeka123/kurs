@@ -4,7 +4,7 @@
 <?php
 $pass=$_POST['password'];
 $login=$_POST['login'];
-$mysql=new mysqli('95.217.23.55','root@localhost','root','turn');
+$mysql=new mysqli('95.217.23.55','root','123','turn');
 
 if ($mysql->connect_error) {
     die("Connection error: ".$mysql>connect_error);
