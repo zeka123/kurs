@@ -34,7 +34,7 @@ die();
 
 $pass=password_hash($pass,PASSWORD_BCRYPT );
 
-$mysql=new mysqli('localhost','root','123','turn');
+$mysql=new mysqli('95.217.23.55','root','123','turn');
 
 $result=$mysql->query ("SELECT*  FROM `start` WHERE  `login` = '$login'");
 
