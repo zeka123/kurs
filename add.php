@@ -6,7 +6,16 @@ $pass=$_POST['password'];
 $login=$_POST['login'];
 
 echo("salam");
-$mysql=new mysqli('localhost','zeka','123','turn');
+
+$mysql= mysql_connect('localhost','zeka','123','turn');
+
+
+
+
+
+
+
+
 
 
 echo("Afasfa");
