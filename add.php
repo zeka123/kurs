@@ -9,6 +9,17 @@ echo("salam");
 
 $mysql= mysql_connect('localhost','zeka','123','turn');
 
+if($mysql)
+echo 'Соединение установлено.';
+else
+die('Ошибка подключения к серверу баз данных.');
+
+$database = 'dbbase';
+$selected = mysql_select_db($database, $mysql);
+if($selected)
+echo ' Подключение к базе данных прошло успешно.';
+else
+die(' База данных не найдена или отсутствует доступ.');
 
 
 
