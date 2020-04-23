@@ -4,7 +4,14 @@
 <?php
 $pass=$_POST['password'];
 $login=$_POST['login'];
+
+echo("salam");
 $mysql=new mysqli('localhost','zeka','123','turn');
+
+
+echo("Afasfa");
+
+
 
 if ($mysql->connect_error) {
     die("Connection error: ".$mysql>connect_error);
