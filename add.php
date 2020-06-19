@@ -7,7 +7,7 @@ $login=$_POST['login'];
 
 echo("salam");
 
-$mysql= mysql_connect('localhost','root','root','turn');
+$mysql= mysql_connect('localhost','zeka','123','turn');
 
 if($mysql)
 echo 'Соединение установлено.';
